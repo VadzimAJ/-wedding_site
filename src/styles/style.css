@@ -1,0 +1,49 @@
+@import url("../styles/theme.css");
+/*Body start*/
+.wrapper {
+  max-width: 90rem;
+  background-color: var(--background-body-color);
+  margin: 0 auto;
+  padding: 0 2.5rem 0 2.5rem;
+}
+
+body {
+  background-position: top center;
+  max-width: 90rem;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  overflow-y: scroll;
+  background-color: var(--border-light-color);
+}
+
+/*Body END*/
+.header {
+  background-color: #599bbe;
+  height: 10%;
+}
+
+.logo-container img {
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+}
+
+.lcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  height: 80%;
+  padding: 20px;
+}
+
+footer {
+  background-color: #599bbe;
+  color: white;
+  padding: 20px;
+  height: 20%;
+}
+
+/*# sourceMappingURL=style.css.map */

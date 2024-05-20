@@ -1,0 +1,165 @@
+/*IMPORT FONTS -=- SnellRoundhand  -=- IMPORT FONTS*/
+
+@font-face {
+  font-family: 'SnellRoundhand-Black';
+  src: url('../styles/fonts/snell-roundhand/SnellRoundhand-Black.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'SnellRoundhand-Bold';
+  src: url('../styles/fonts/snell-roundhand/SnellRoundhand-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'SnellRoundhand';
+  src: url('../styles/fonts/snell-roundhand/SnellRoundhand.ttf') format('truetype');
+}
+
+/*IMPORT FONTS -=- Bickham Script -=- IMPORT FONTS*/
+
+@font-face {
+  font-family: 'Bickham Script Pro Bold';
+  src: url('../styles/fonts/bickham-script-pro/Bickham Script Pro Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Bickham Script Pro Regular';
+  src: url('../styles/fonts/bickham-script-pro/Bickham Script Pro Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Bickham Script Pro Semibold';
+  src: url('../styles/fonts/bickham-script-pro/Bickham Script Pro Semibold.ttf') format('truetype');
+}
+
+/*GOOGLE FONTS -=- Bickham Script -=- GOOGLE FONTS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.cdnfonts.com/css/inter?styles=29141');
+
+
+@import url('./reset.css');
+
+:root {
+/*COLORS*/
+
+  /* Text */
+--text-dark-color: #383A27;
+--text-light-color: #7B472F;
+--text-accent-color: #A07E67;
+
+  /* Background */
+--background-body-color: #D9D1C3;
+--background-container-color: #936345;
+--background-background-color: #7F6D42;
+
+/* Border */
+--border-light-color: #C1B6AD;
+--border-dark-color: #665F55;
+
+/*FONTS*/
+
+--font-family-logo: 'Bickham Script Pro Semibold', sans-serif;
+--font-family-inter: 'Inter', sans-serif;
+
+}
+
+
+/* Logo-fonts */
+
+.font-logo-1 {
+  font-family: var(--font-family-logo);
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 105%;
+}
+
+/* Heading 1 */
+.accent {
+  font-style: italic;
+}
+
+.font-heading-1 {
+  font-family: var(--font-family-inter);
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 105%;
+}
+
+/* Heading 2 */
+.font-heading-2 {
+  font-family: var(--font-family-inter);
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+/* Heading 3 */
+.font-heading-3 {
+  font-family: var(--font-family-inter);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+/*Body*/
+.font-medium {
+  font-family: var(--font-family-inter);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.font-caption {
+  font-family: var(--font-family-inter);
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+/*Action*/
+
+.font-link-and-button {
+  font-family: var(--font-family-inter);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.font-burger-link {
+  font-family: var(--font-family-inter);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+/*[MOBILE]*/
+
+/* Mobile Heading 1 */
+.mobile-accent {
+  font-style: italic;
+}
+
+.font-mobile-heading-1 {
+  font-family: var(--font-family-inter);
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 115%;
+}
+
+/* Mobile Heading 2 */
+.font-mobile-heading-2 {
+  font-family: var(--font-family-inter);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+
+@media (min-width: 280px) and (max-width: 767px) {
+  .font-heading-1 {
+    font-size: calc(42px + (72 - 42) * ( (100vw - 380px) / ( 768 - 380) ));
+    line-height: 115%;
+  }
+
+  .font-heading-2 {
+    font-size: calc(32px + (60 - 32) * ( (100vw - 380px) / ( 768 - 380) ));
+    line-height: 125%;
+  }
+}
