@@ -21,6 +21,8 @@ body {
 
 /*Body END*/
 /*HEADER Start */
+
+
 .header {
   position: fixed;
   top: 0;
@@ -53,12 +55,19 @@ body {
   align-items: center;
 }
 
+.lcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .logo {
   margin-left: 70.5px;
   cursor: pointer;
   transform: scale(1) rotate(-8deg);
   transition: transform 0.3s ease-in-out;
 }
+
 
 @media (hover: hover) {
   .logo:hover .logo-container:hover {
@@ -241,17 +250,102 @@ body {
 }
 
 /* SECTION ENJOY END*/
-.logo-container img {
-  height: 60px;
-  width: 60px;
-  border-radius: 30px;
+
+/* SECTION ABOUT START*/
+
+.section-about{
+	min-height: 82.813rem;
+	padding-top: 6.27rem;
+	padding-bottom: 80px;
 }
 
-.lcontainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.section-about-container{
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	align-items: center;
 }
+
+.section-about-title{
+	font-style: italic;
+	color: var(--text-light-color);
+	margin-left: 0.01em;
+}
+
+.section-about-title::before{
+	content: 'Make your';
+	font-style: normal;
+	color: var(--text-dark-color);
+}
+
+.section-about-title::after{
+	content: 'in an instant with Express Weddings, ensuring a seamless experience for your special day!';
+	font-style: normal;
+	color: var(--text-dark-color);
+}
+
+/*GRID START*/
+
+
+.grid-item {
+	display: inline-block;
+	border-radius: 20px;
+	background-position: center;
+	object-fit: cover;
+	transition: background-size 0.5s ease-in-out;
+	background-size: 110%;
+	background-repeat: no-repeat;
+	margin-right: 40px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	
+}
+
+.about-grid {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 1100px;
+	padding-top: 20px;
+}
+
+.grid1 {
+	background-image: url("../assets/images/grid_1.jpg");
+	height: 590px;
+	width: 660px;
+	background-color: red;
+	
+}
+.grid2 {
+	background-image: url("../assets/images/grid_2.jpg");
+	background-color: gray;
+	height: 430px;
+	width: 660px;
+}
+.grid3 {
+	background-image: url("../assets/images/grid_3.jpg");
+	background-color: green;
+	height: 430px;
+	width: 660px;
+}
+.grid4 {
+	background-image: url("../assets/images/grid_4.jpg");
+	background-color: blue;
+	height: 590px;
+	width: 660px;
+}
+
+
+@media (hover:hover) {
+	.grid-item:hover{
+		background-size: 100%;
+	}
+}
+
+/*GRID END*/
+
+/* SECTION ABOUT END*/
+
 
 /* CONTUCT US SECTION START*/
 
