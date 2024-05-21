@@ -34,14 +34,14 @@
 @import url('https://fonts.cdnfonts.com/css/inter?styles=29141');
 
 
-@import url('./reset.css');
+
 
 :root {
 /*COLORS*/
 
   /* Text */
 --text-dark-color: #383A27;
---text-light-color: #7B472F;
+--text-light-color: #cfb231;
 --text-accent-color: #A07E67;
 
   /* Background */

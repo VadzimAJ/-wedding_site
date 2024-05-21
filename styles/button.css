@@ -1,0 +1,149 @@
+.button{
+  display: flex;
+  width: 12.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 12.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.slider-button {
+  position: relative;
+  display: flex;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 6.25rem;
+  justify-content: center;
+  align-items: center;
+  border: 0.063rem solid var(--border-dark-color);
+	cursor: pointer;
+  
+}
+
+.slider-button svg {
+  filter: brightness(1) invert(0);
+  transition: filter 0.5s ease;
+}
+
+.slider-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 6.25rem;
+  background-color: var(--background-body-color);
+	transition: background-color 0.5s ease;
+}
+
+@media (hover:hover) {
+	.slider-button:hover::before {
+		background-color: var(--border-dark-color);
+		transform: scale(1.01);
+	}
+	
+	.slider-button:hover svg{
+		filter: brightness(0) invert(1);
+		transition: filter 0.5s ease;
+	}
+}
+
+
+.mobile-button{
+	display: flex;
+	padding: 12px 0px;
+	border: 1px solid var(--background-background-color);
+	margin-right: 20px;
+	background-color: var(--background-body-color);
+	transition: background-color 0.5s ease;
+}
+
+.mobile-button{
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+.mobile-button-svg{
+	margin-left: 17px;
+}
+
+.mobile-button-title{
+	display: flex;
+	flex-direction: column;
+	color: var(--text-dark-color);
+}
+
+.footer-img-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 58px;
+	width: 58px;
+	border: 1px solid var(--border-light-color) ;
+	border-radius: 30px;
+	cursor: pointer;
+	background-color: var(--border-dark-color);
+	transition: background-color 0.5s ease;
+}
+
+@media (hover:hover) {
+	.footer-img-container:hover > .footer-icon{
+		filter: invert(1);
+		transition: filter 0.5s ease;
+	}
+
+	.footer-img-container:hover
+	{
+		background-color: var(--border-light-color);
+	}
+	
+}
+
+.menu-buttons{
+	display: flex;
+	padding: 8px 16px 4px 8px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100px;
+	border: 1px solid var(--border-light-color);
+	transition: background-color 0.5s ease;
+	cursor: pointer;
+}
+
+.menu-buttons img {
+	background-color: var(--border-light-color);
+	padding: 6px 6px;
+	border-radius: 100px;
+	transition: background-color 0.5s ease;
+	margin-right: 8px;
+}
+
+@media (hover:hover) {
+	.menu-buttons:hover {
+		border: 1px solid var(--border-dark-color);
+		background-color: var(--border-dark-color);
+		transition: background-color 0.5s ease;
+	}
+	
+	.menu-buttons:hover img {
+		background-color: var(--background-body-color);
+		transition: background-color 0.5s ease;
+	}
+
+	
+}
+
+.active  {
+	border: 1px solid var(--border-dark-color);
+	background-color: var(--border-dark-color);
+	transition: background-color 0.5s ease;
+}
+
+.active  img {
+	background-color: var(--background-body-color);
+	transition: background-color 0.5s ease;
+}
