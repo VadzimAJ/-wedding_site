@@ -374,9 +374,10 @@ body {
 }
 
 .contact-us-title::before{
-	content: 'Sip, Savor, Smile. ';
+	content: 'Planning and assistance. ';
 	font-style: normal;
 	color: var(--border-light-color);
+  margin-right: 110px;
 }
 
 .footer-social{
@@ -425,6 +426,362 @@ body {
 		transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 	}
 }
+
+@media (max-width: 1439px) {
+
+	.section-enjoy{
+		min-height: 40.25rem;
+	}
+
+
+	.favourites-coffee-titile{
+		padding-bottom: 5.2vw;
+	}
+
+	.favourites-coffee-titile::before{
+		padding-left: calc(20px + (277 - 20) * ( (100vw - 768px) / ( 1440 - 768) ));
+	}
+
+	.about-grid {
+		height: auto;
+		min-height: 1060px;
+		flex-direction: row;
+		justify-content: center;
+	}
+	.grid2, .grid3{
+		display: none;
+	}
+
+	.mobile-title{
+		max-width: 688px;
+		margin-right: 5vw;
+	}
+
+	.mobile-description{
+		max-width: 688px;
+	}
+
+
+	.mobile-title{
+		padding-top: 0;
+	}
+	
+	.mobile-image{
+		max-width:  630px;
+		width: 100%;
+	}
+}
+
+@media (max-width: 1154px) {
+	.favourites-coffee-container{
+		text-align: center;
+	}
+	.favourites-coffee-titile::before{
+		padding-left: 0;
+	}
+	.about-grid {
+		flex-direction: column;
+	}
+	.grid-item{
+		background-size: 106%;
+		width: 100%;
+	}
+
+	.grid1,.grid2,.grid3,.grid4 {
+		height: 590px;
+		width: 688px;
+	}
+
+	.contact-us-block{
+		flex-direction: column;
+		padding: 100px 60px 84px 60px;
+		align-items: start;
+		gap: 86px;
+	}
+
+	.menu-cell-5, .menu-cell-6, .menu-cell-7, .menu-cell-8{
+		display: none;
+	}
+
+	.menu-refresh-bottom{
+		display: flex;
+		justify-items: center;
+		align-items: center;
+		margin-top: 39px;
+	}
+}
+
+/*<760px*/
+
+@media (max-width: 768px) {
+	.header-nav{
+		position: fixed;
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		margin: 0;
+		top: 98.5px;
+		right: -100%;
+		width: 100%; 
+		height: 100%; 
+		transition: right 1s ease-in-out;
+		
+		
+	}
+	
+	.header-nav::before {
+		content: '';
+		position: absolute;
+		
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		background-color: var(--background-body-color);
+		opacity: .9;
+		z-index: -1;
+
+		transition: right 1s ease-in-out;
+	}
+	
+	.header-nav.show {
+		right: 0%;
+	}
+
+	.header-nav-ul{
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+		height: 100%;
+		gap: 55px;
+	}
+
+	.header-nav-ul li a {
+		font-family: var(--font-family-inter);
+		font-size: 32px;
+		font-weight: 600;
+		line-height: 125%;
+	}
+
+	.header-nav-ul li:first-child{
+		padding-top: 57px;
+	}
+
+	.header-nav-ul li:last-child{
+		padding-top: 31px;
+	}
+
+	.header-nav-ul li:last-child span {
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		background: url(../img/coffee-cup.svg) no-repeat;
+		background-size: contain;
+		margin-left: 15px;
+		position: relative;
+  	top: 8px;
+	}
+
+	@media (hover:hover) {
+		.header-menu:hover {
+			box-shadow: 0 0px white;
+		}
+	}
+
+	.burger-button{
+		display: flex;
+	}
+	
+	.burger-line{
+		display: block;
+	}
+
+	.header-menu-wrapper svg, .header-menu-wrapper::before{
+		display: none;
+	}
+
+	.about-grid {
+		flex-direction: column;
+		width: 100%;
+	}
+	
+	
+
+}
+
+@media (max-width: 767px) {
+
+	.enjoy-container{
+		min-height:  calc(292px + (644 - 552) * ( (100vw - 380px) / ( 768 - 380) ));
+		padding-bottom: calc((100 - 60) * ( (100vw - 380px) / ( 768 - 380) ));;
+	}
+
+	.enjoy-content{
+		max-width: 530px;
+		padding: 0;
+		padding-top: calc(60px + (100 - 60) * ( (100vw - 380px) / ( 768 - 380) ));
+		padding-left: calc(16px + (60 - 16) * ( (100vw - 380px) / ( 768 - 380) ));
+		padding-right: calc(16px + (60 - 16) * ( (100vw - 380px) / ( 768 - 380) ));
+		padding-bottom: calc(60px + (100 - 60) * ( (100vw - 380px) / ( 768 - 380) ));
+	}
+	
+	.favourites-coffee-slider-button-forward, .favourites-coffee-slider-button-back{
+		display: none;
+	}
+	.favourites-coffee-slider{
+		justify-content: center;
+	}
+	.grid-item{
+		background-size: 105.4%;
+		width: 100%;
+	}
+
+	.grid1,.grid2,.grid3,.grid4 {
+		height: 590px;
+		width: 100%;
+		background-size: cover;
+	}
+	
+
+
+	.mobile-image {
+		background-repeat: no-repeat;
+    max-width: 630px;
+    width: 100%;
+    text-align: center;
+	}
+
+	.favourites-coffee-card-block img {
+		height: calc(348px + (480 - 380) * ( (100vw - 380px) / ( 768 - 380) ));
+		width: calc(348px + (480 - 380) * ( (100vw - 380px) / ( 768 - 380) ));
+		background-size: contain;
+		background-position: center;
+	}
+}
+
+@media (max-width: 600px) {
+	.wrapper {
+		padding: 0 4.1vw 0 4.1vw;
+	}
+
+	
+	.section-enjoy{
+		padding-top: 100px;
+	}
+
+	
+
+
+	.mobile-apps-description-buttons{
+		flex-direction: column;
+	}
+	.logo{
+		margin-left: calc(46.5px + (71 - 47.5) * ( (100vw - 380px) / ( 600 - 380) ));
+	}
+
+	.header-menu{
+		cursor: pointer;
+		margin-right: calc(13px + (40 - 13) * ( (100vw - 380px) / ( 600 - 380) ));
+		margin-top: 2px;
+	}
+
+	.favourites-coffee-titile{
+		padding-top: 9px;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.section-favourites-coffee{
+		min-height: auto;
+	}
+
+	.favourites-coffee-container{
+		padding-top: 10px;
+	}
+
+	.favourites-coffee-slider{
+		min-height: auto;
+		padding-top: 40px;
+	}
+
+	.section-about-container{
+		padding-top: 102px;
+	}
+
+	.grid-item {
+		background-size: 210%;
+	}
+
+	.section-modile{
+		padding-top: 80px;
+	}
+
+	.mobile-title{
+		margin-right: 0;
+	}
+
+	.mobile-description {
+		padding-top: 39px;
+	}
+	.mobile-apps-description{
+		padding-bottom: 40px;
+	}
+	
+	.mobile-button:first-child{
+		margin-bottom: 20px;
+	}
+
+	.mobile-image{
+		padding-bottom: 0;
+		height: 348px;
+	}
+
+	.contact-us-container {
+		min-height: auto;
+		padding-bottom: 40px;
+	}
+
+	.contact-us-block{
+		padding: 60px 16px 45px 16px;
+		min-height: auto;
+		gap: 25px;
+	}
+	
+
+	.contact-us-title {
+		margin-bottom: 40px;
+    white-space: normal;
+	}
+
+	.contact-us-container{
+		padding-top: 100px;
+	}
+
+
+	.contact-us-contacts-conteiner{
+	}
+
+
+	.menu-page-container{
+		padding-top: 100px;
+	}
+
+	.menu-drinks{
+		gap: 8px;
+	}
+
+	.contact-us-title {
+		position: relative;
+  	display: inline-block;
+		width: auto;
+	}
+	
+	.contact-us-title h3 {
+		word-wrap: break-word;
+		overflow-wrap: break-word;
+	}
+
 
 
 
