@@ -374,9 +374,10 @@ body {
 }
 
 .contact-us-title::before{
-	content: 'Sip, Savor, Smile. ';
+	content: 'Planning and assistance. ';
 	font-style: normal;
 	color: var(--border-light-color);
+  margin-right: 110px;
 }
 
 .footer-social{
@@ -750,15 +751,13 @@ body {
 
 	.contact-us-title {
 		margin-bottom: 40px;
+    white-space: normal;
 	}
 
 	.contact-us-container{
 		padding-top: 100px;
 	}
 
-	.contact-us-title {
-		white-space: normal;
-	}
 
 	.contact-us-contacts-conteiner{
 	}
